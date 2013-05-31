@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Signature!</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+	<link href="assets/lib/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" style="position:static;margin-bottom:20px">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<a class="brand" href="/sign"><img src="assets/img/logo.png" style="width:24px;margin:-5px 6px 0 0"/>SNS应用部 - 签名档工具 <sup class="badge badge-important">v0.5</sup></a>	
+		</div>
+	</div>
+</div>
+	
+<div class="container">
+	<div class="row">
+		<div class="span4">
+				<form id="theme_config">
+				   <fieldset>
+    			   <legend>参数</legend>
+				   <div class="input-prepend">
+					  <span class="add-on" style="width:40px">RTX</span>
+					  <input id="rtx_input" type="text" placeholder="范例: robertwen 文拯">
+				   </div>
+				   <div class="input-prepend">
+					  <span class="add-on" style="width:40px">Group</span>
+					  <input id="group_input" type="text" placeholder="范例: SNS 前端开发组">
+				   </div>
+				  
+				   <div class="input-prepend">
+					  <span class="add-on" style="width:40px">Phone</span>
+					  <input id="phone_input" type="text" placeholder="范例: 12345">
+				   </div>
+				   <div class="input-prepend">
+					  <span class="add-on" style="width:40px">Mobile</span>
+					  <input id="mobile_input" type="text" placeholder="范例: 18626869100">
+				   </div>
+				   </fieldset>
+				</form>
+				<fieldset>
+    			   <legend>关于这个工具</legend>
+    			   <div>
+    			   	<label><strong><i class="icon-question-sign"></i> 工具研发:</strong></label>
+    			   	<span class="help-block"><span class="label">SNS应用部/前端开发组</span></span>
+    			   
+					<label><strong><i class="icon-book"></i> HTML5技术支持:</strong></label>
+					<blockquote>
+    			   	<span class="help-block"><a href="https://developer.mozilla.org/en-US/docs/HTML/Canvas" target="_blank">Canvas</a></span>
+    			   	<span class="help-block"><a href="https://developer.mozilla.org/zh-CN/docs/DOM/window.atob" target="_blank">window.atob</a></span>
+    			   	<span class="help-block"><a href="https://developer.mozilla.org/zh-CN/docs/DOM/Blob" target="_blank">Blob</a></span>
+    			   	<span class="help-block"><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Typed_arrays" target="_blank">JavaScript typed arrays</a></span>
+    			   	<span class="help-block"><a href="http://updates.html5rocks.com/2011/08/Downloading-resources-in-HTML5-a-download" target="_blank">a[download]</a></span>
+					<span class="help-block">以及 <a href="http://www.bootcss.com/" target="_blank">bootstrap</a></span>
+					</blockquote>
+
+    			   	<label><strong><i class="icon-gift"></i> 捐赠我们:</strong></label>
+    			   	<span class="help-block"><button class="btn btn-mini btn-danger disabled">可以私下支持</button> <small>吃饭什么的。</small></span>
+    			   </div>
+    			</fieldset>
+		</div>
+		<div class="span7">
+			<fieldset>
+			<legend>签名档</legend>
+			<div id="theme_list" style="width:610px"></div>
+			
+			</fieldset>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	if (document.attachEvent) {
+        alert("这个作品不支持 IE 哦，请使用chrome查看我！");
+    }
+</script>
+<script src="assets/seajs/sea.js" data-config="sign/js/config.js?" data-main="sign/js/signature.js?"></script>
+</body>
+</html>
